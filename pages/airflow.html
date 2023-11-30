@@ -69,12 +69,12 @@
 
     <section>
         <article id="ins-usg-dck">
-            <h2>Install Using Docker</h2>
-            <p>Version: 2.7.3</p>
+            <h2>Install Using Docker</h2> <br>
+            <p>Version: 2.7.3</p> <br>
             
-            <b>Step to Step: Install docker</b>
+            <b>Step to Step: Install docker</b> <br>
             
-            1. Remove install docker (user with sudo permissions):
+            1. Remove install docker (user with sudo permissions): <br>
             
               $ sudo yum remove docker \
                   docker-client \
@@ -84,71 +84,77 @@
                   docker-latest-logrotate \
                   docker-logrotate \
                   docker-engine
-            2. Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
-             $ sudo yum install -y yum-utils
-            
-            3. Install Docker Engine, containerd, and Docker Compose:
-             $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-            
-            4. To install the latest version, run:
-             $ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-             
-            5. Activate service: 
-             $ sudo systemctl enable docker
-            
-            6. Start service:
-             $ sudo systemctl start docker
-            
-            7. Review install and version:
-             $ sudo docker ps -a
-             $ sudo docker --version
-             
-            <b>Step to Step: Install docker-compose</b>
-            
-            1. To download and install Compose standalone, run:
-             $ sudo curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-            
-            2. Test and execute compose commands using docker-compose.
-             $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose 
-            
-            3. Add permissions:
-             $ sudo chmod +x /usr/local/bin/docker-compose
-            
-            4. Review install and version:
-             $ docker-compose --version
-            
-            <b>Step to Step: Install airflow-docker</b>
-            
-            1. Create and open folder for airflow: 
-             $ mkdir /home/dcuasapaz/docker/airflow_2.7.3
-             $ cd /home/dcuasapaz/docker/airflow_2.7.3
-            
-            2. Download docker-compose for airflow:
-             $ sudo curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.3/docker-compose.yaml'
-            
-            3. Create folders:
-             $ mkdir ./dags ./plugins ./logs
-            
-            4. Let�s run the initialization script to create a user and upgrade the airflow.
-             $ sudo docker-compose up airflow-init
-            
-            5. If the script ran successfully, you would get the above message. Make sure you are getting the same. Now, let�s start all the airflow services.
-             $ sudo docker-compose up -d
-            
-            6. View docker list
-             $ sudo docker ps 
-            
-            7. Open link in your browser: http://localhost:8080/
-            
-            <b>User:</b> airflow
-            <b>Password:</b> airflow
 
-            <img src="../img/airflow_login.png">
+            2. Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository. <br>
+             $ sudo yum install -y yum-utils <br>
             
-            8. View main page:
+            3. Install Docker Engine, containerd, and Docker Compose: <br>
+             $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo <br>
+            
+            4. To install the latest version, run: <br>
+             $ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin <br>
+             
+            5. Activate service: <br>
+             $ sudo systemctl enable docker <br>
+            
+            6. Start service: <br>
+             $ sudo systemctl start docker <br>
+            
+            7. Review install and version: <br>
+             $ sudo docker ps -a <br>
+             $ sudo docker --version <br>
+             
+            <b>Step to Step: Install docker-compose</b> <br>
+            
+            1. To download and install Compose standalone, run: <br>
+             $ sudo curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose <br>
+            
+            2. Test and execute compose commands using docker-compose. <br>
+             $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose <br>
+            
+            3. Add permissions: <br>
+             $ sudo chmod +x /usr/local/bin/docker-compose <br>
+            
+            4. Review install and version: <br>
+             $ docker-compose --version <br>
+            
+            <b>Step to Step: Install airflow-docker</b> <br>
+            
+            1. Create and open folder for airflow: <br>
+             $ mkdir /home/dcuasapaz/docker/airflow_2.7.3 <br>
+             $ cd /home/dcuasapaz/docker/airflow_2.7.3 <br>
+            
+            2. Download docker-compose for airflow: <br>
+             $ sudo curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.3/docker-compose.yaml' <br>
+            
+            3. Create folders: <br>
+             $ mkdir ./dags ./plugins ./logs <br>
+            
+            4. Let's run the initialization script to create a user and upgrade the airflow. <br>
+             $ sudo docker-compose up airflow-init <br>
+            
+            5. If the script ran successfully, you would get the above message. Make sure you are getting the same. Now, let�s start all the airflow services. <br>
+             $ sudo docker-compose up -d <br>
+            
+            6. View docker list <br>
+             $ sudo docker ps <br>
+            
+            7. Open link in your browser: http://localhost:8080/<br>
+            
+            <b>User:</b> airflow <br>
+            <b>Password:</b> airflow <br>
+            
+            <div class="bdy-img-blog">
+                <img src="../img/airflow_login.png">
+            </div>
+            
+            
+            8. View main page: <br>
+            
+            <div class="bdy-img-blog"></div>
+                <img class="bdy-img-blog-obj" src="../img/airflow_main.png">
+            </div>
 
-            <img src="../img/airflow_main.png">
-              
             <br>
             <br>
             <br> 

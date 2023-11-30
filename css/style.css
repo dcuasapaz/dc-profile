@@ -30,6 +30,14 @@ ta{
 .txt-blog-abs{
   text-align: justify;
 }
+
+.bdy-img-blog{
+  width: 100%;
+}
+
+.bdy-img-blog-obj{
+  width: 60%;
+}
 /*****************************/
 
 
