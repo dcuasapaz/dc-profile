@@ -32,7 +32,8 @@ section {
 
 article {
     background-color: #fff;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 80%;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,16 +51,24 @@ footer {
 
 .bdy-img-blog{
     width: 100%;
-  }
+ }
   
-  .bdy-img-blog-obj{
+.bdy-img-blog-obj{
     width: 60%;
-  }
-
-  .blc-cmd{
-    padding: 20px;
-    background: #444;
+}
+.blc-cmd-promt{
     color: #f4f4f4;
-    font-weight: bold;
-    font-size: 11px;
-  }
+    margin-right: 5px;
+}
+.blc-cmd{
+    padding: 10px;
+    background: #2f0438;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid #09d82a;
+    font-family: 'Courier New', monospace;
+    display: flex;
+}

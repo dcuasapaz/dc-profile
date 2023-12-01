@@ -26,29 +26,29 @@
             <b>Step to Step: Install docker</b>
             <ul>
                 <li>1. Remove install docker (user with sudo permissions):
-                    <div class="blc-cmd">$ sudo yum remove docker docker-client docker-client-latest docker-latest docker-latest-logrotate docker-logrotate docker-engine</div>
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo yum remove docker docker-client docker-client-latest docker-latest docker-latest-logrotate docker-logrotate docker-engine</div>
                 </li>
                 <li>2. Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
-                    <div class="blc-cmd">$ sudo yum install -y yum-utils</div>
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo yum install -y yum-utils</div>
+                </li>
+                <li>3. Install Docker Engine, containerd, and Docker Compose:
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</div>
+                </li>
+                <li>4. To install the latest version, run:
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</div>
+                </li>
+                <li>5. Activate service: 
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo systemctl enable docker</div>
+                </li>
+                <li>6. Start service:
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div> sudo systemctl start docker</div>
+                </li>
+                <li>7. Review install and version:
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div>sudo docker ps -a</div>
+                    <div class="blc-cmd"><div class="blc-cmd-promt">$</div>sudo docker --version</div>
                 </li>
             </ul>
-            
-            3. Install Docker Engine, containerd, and Docker Compose: <br>
-             $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo <br>
-            
-            4. To install the latest version, run: <br>
-             $ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin <br>
-             
-            5. Activate service: <br>
-             $ sudo systemctl enable docker <br>
-            
-            6. Start service: <br>
-             $ sudo systemctl start docker <br>
-            
-            7. Review install and version: <br>
-             $ sudo docker ps -a <br>
-             $ sudo docker --version <br>
-             
+                         
             <b>Step to Step: Install docker-compose</b> <br>
             
             1. To download and install Compose standalone, run: <br>
