@@ -55,3 +55,11 @@ footer {
   .bdy-img-blog-obj{
     width: 60%;
   }
+
+  .blc-cmd{
+    padding: 20px;
+    background: #444;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 11px;
+  }

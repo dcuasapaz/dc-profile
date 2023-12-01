@@ -21,23 +21,17 @@
     <section>
         <article id="ins-usg-dck">
             <h2>Install Using Docker</h2> <br>
-            <p>Version: 2.7.3</p> <br>
+            <b>Ariflow</b> | <p>Version: 2.7.3</p> <br>
             
-            <b>Step to Step: Install docker</b> <br>
-            
-            1. Remove install docker (user with sudo permissions): <br>
-            
-              $ sudo yum remove docker \
-                  docker-client \
-                  docker-client-latest \
-                  docker-common \
-                  docker-latest \
-                  docker-latest-logrotate \
-                  docker-logrotate \
-                  docker-engine
-
-            2. Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository. <br>
-             $ sudo yum install -y yum-utils <br>
+            <b>Step to Step: Install docker</b>
+            <ul>
+                <li>1. Remove install docker (user with sudo permissions):
+                    <div class="blc-cmd">$ sudo yum remove docker docker-client docker-client-latest docker-latest docker-latest-logrotate docker-logrotate docker-engine</div>
+                </li>
+                <li>2. Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
+                    <div class="blc-cmd">$ sudo yum install -y yum-utils</div>
+                </li>
+            </ul>
             
             3. Install Docker Engine, containerd, and Docker Compose: <br>
              $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo <br>
@@ -108,17 +102,18 @@
 
             <br>
             <br>
-            <br> 
-            <b>References:</b>
-
-            <b>Docker</b><p>https://docs.docker.com/engine/install/centos/</p>
-            <b>Docker-compose</b><p>https://docs.docker.com/compose/install/standalone/</p>
-            <b>Docker-compose</b><p>https://www.hostinger.es/tutoriales/instalar-docker-centos7</p>
-            <b>Docker-compose</b><p>https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7</p>
-            <b>Apache Airflow - Docker</b><p>https://naiveskill.com/install-airflow/</p>
+            <br>
+            <p>
+                <b>References:</b>
+                <ul>
+                    <li><b>Docker</b> | <a target="_blank" href="https://docs.docker.com/engine/install/centos/">https://docs.docker.com/engine/install/centos/</a></li>
+                    <li><b>Docker-compose</b> | <a target="_blank" href="https://docs.docker.com/compose/install/standalone/">https://docs.docker.com/compose/install/standalone/</a></li>
+                    <li><b>Docker-compose</b> | <a target="_blank" href="https://www.hostinger.es/tutoriales/instalar-docker-centos7">https://www.hostinger.es/tutoriales/instalar-docker-centos7</a></li>
+                    <li><b>Docker-compose</b> | <a target="_blank" href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7">https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7</a></li>
+                    <li><b>Apache Airflow - Docker</b> | <a target="_blank" href="https://naiveskill.com/install-airflow/">https://naiveskill.com/install-airflow/</a></li>
+                </ul>
+            </p>
             
-            <p></p>
-            <p></p>
             <a href="#">Read more</a>
         </article>
 
